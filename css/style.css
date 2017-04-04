@@ -133,6 +133,18 @@ header a:hover {
 	border-bottom-left-radius: 5px;
 }
 
+#newsletter .validator {
+	float: right;
+	margin-top: 52px;
+	margin-right: -260px;
+	padding: 3px;
+	text-align: center;
+	width: 250px;
+	color: #ffb3b3;
+	font-weight: bold;
+	font-style: italic;
+}
+
 
 /*Boxes*/
 
@@ -201,7 +213,25 @@ footer {
 	background-color: #302319;
 	text-align: center;
 }
+#sidebar .quote .validator_form {
+	padding: 3px;
+	text-align: center;
+	width: 90%;
+	color: #ffb3b3;
+	font-weight: bold;
+	font-style: italic;
+}
 
+.button_2 {
+	height: 38px;
+	background: #F44336;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ffffff;
+	border-radius: 5px;
+	
+}
 
 /*Media Queries*/
 

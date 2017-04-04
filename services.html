@@ -28,10 +28,13 @@
 	<section id="newsletter">
 		<div class="container">
 			<h1>Subscribe To Our Newsletter</h1>
-			<form>
-				<input type="email" placeholder="Enter Email...">
-				<button type="submit" class="button_1">Subscribe</button>
+			<form onsubmit="return false;">
+				<input id="mail" type="email" placeholder="Enter Email..." onkeyup="mail_address()">
+				<button type="submit" class="button_1" onclick="valid_submit('error_services')">Subscribe</button>
 			</form>
+			<div class="validator" id="error_services">
+				
+			</div>
 		</div>
 	</section>
 
@@ -62,20 +65,23 @@
 			<aside id="sidebar">
 				<div class="green">
 					<h3>Get A Quote</h3>
-					<form class="quote">
+					<form class="quote" onsubmit="return false;">
 						<div>
 							<label>Name</label><br>
-							<input type="text" placeholder="Name">
+							<input id="text" type="text" placeholder="Name" onkeyup="valid_name()"><br>
+							<div id="error_text" class="validator_form"></div>
 						</div>
 						<div>
 							<label>Email</label><br>
-							<input type="email" placeholder="Email Address">
+							<input id="email" type="email" placeholder="Email Address" onkeyup="valid_email()"><br>
+							<div id="error_email" class="validator_form"></div>
 						</div>
 						<div>
 							<label>Message</label><br>
-							<textarea placeholder="Message"></textarea>
+							<textarea id="message" placeholder="Message" onkeyup="valid_message()"></textarea><br>
+							<div id="error_message" class="validator_form"></div>
 						</div>
-						<button class="button_1" type="submit">Send</button>
+						<button class="button_2" type="submit" onclick="valid_form()">Send</button>
 					</form>
 				</div>
 			</aside>

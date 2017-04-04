@@ -28,10 +28,13 @@
 	<section id="newsletter">
 		<div class="container">
 			<h1>Subscribe To Our Newsletter</h1>
-			<form>
-				<input type="email" placeholder="Enter Email...">
-				<button type="submit" class="button_1">Subscribe</button>
+			<form onsubmit="return false;">
+				<input id="mail" type="email" placeholder="Enter Email..." onkeyup="mail_address()">
+				<button type="submit" class="button_1" onclick="valid_submit('error_about')">Subscribe</button>
 			</form>
+			<div class="validator" id='error_about'>
+				
+			</div>
 		</div>
 	</section>
 
